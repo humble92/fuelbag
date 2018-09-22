@@ -1,15 +1,31 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Header from './Header'
 import Home from './Home'
+import { CHARITY, MENTORS, HOME } from '../pages'
+import Charity from './Charity'
+import Mentors from './Mentors'
 
-const App = () => (
+const App = ({
+  page,
+}) => (
   <div style={{
     backgroundColor: '#FF9A43',
     height: '100vh',
   }}>
     <Header />
-    <Home />
+    {(!page || page === HOME) &&
+      <Home />
+    }
+    {page === CHARITY &&
+      <Charity />
+    }
+    {page === MENTORS &&
+      <Mentors />
+    }
   </div>
 )
 
-export default App
+export default connect(state => ({
+  page: state.page,
+}))(App)

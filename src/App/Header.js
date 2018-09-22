@@ -1,19 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import styled from 'styled-components'
+import { set as setPage } from '../redux/page/set'
+import {
+  HOME,
+  CHARITY,
+  MENTORS,
+} from '../pages.js'
 
 const MenuItem = styled.div`
   height: 50px;
   line-height: 50px;
-  margin-left: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   cursor: pointer;
   &:hover {
     background-color: white;
   }
 `
 
-export default () => (
+const Header = ({
+  onSetPage,
+}) => (
   <div style={{
     backgroundColor: '#40E9F1',
     display: 'flex',
@@ -31,9 +39,13 @@ export default () => (
       width: '100%',
       justifyContent: 'center',
     }}>
-      <MenuItem>Home</MenuItem>
-      <MenuItem>Charity organizations</MenuItem>
-      <MenuItem>Mentors</MenuItem>
+      <MenuItem onClick={() => onSetPage(HOME)}>Home</MenuItem>
+      <MenuItem onClick={() => onSetPage(CHARITY)}>Charity organizations</MenuItem>
+      <MenuItem onClick={() => onSetPage(MENTORS)}>Mentors</MenuItem>
     </div>
   </div>
 )
+
+export default connect(null, {
+  onSetPage: setPage,
+})(Header)

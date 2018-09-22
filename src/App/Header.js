@@ -1,4 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const MenuItem = styled.div`
+  height: 50px;
+  line-height: 50px;
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+  }
+`
 
 export default () => (
   <div style={{
@@ -18,17 +31,9 @@ export default () => (
       width: '100%',
       justifyContent: 'center',
     }}>
-      <div>Home</div>
-      <div style={{
-        paddingLeft: 50,
-      }}>
-        Charity organizations
-      </div>
-      <div style={{
-        paddingLeft: 50,
-      }}>
-        Mentors
-      </div>
+      <MenuItem>Home</MenuItem>
+      <MenuItem>Charity organizations</MenuItem>
+      <MenuItem>Mentors</MenuItem>
     </div>
   </div>
 )

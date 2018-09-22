@@ -1,13 +1,14 @@
 import React from 'react'
+import Header from './Header'
+import Home from './Home'
 
 const App = () => (
-  <div>
-    <header>
-      <h1>Welcome to Fuelbag</h1>
-    </header>
-    <p>
-      Let's break the cycle of poverty together!
-    </p>
+  <div style={{
+    backgroundColor: '#FF9A43',
+    height: '100vh',
+  }}>
+    <Header />
+    <Home />
   </div>
 )
 

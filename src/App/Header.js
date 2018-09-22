@@ -8,7 +8,11 @@ export default () => (
     width: '100%',
     height: 50,
   }}>
-    <div>Logo</div>
+    <div style={{
+      paddingLeft: 20,
+    }}>
+      Logo
+    </div>
     <div style={{
       display: 'flex',
       width: '100%',

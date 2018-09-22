@@ -11,7 +11,7 @@ const App = ({
 }) => (
   <div style={{
     backgroundColor: '#FF9A43',
-    height: '100vh',
+    minHeight: '100vh',
   }}>
     <Header />
     {(!page || page === HOME) &&

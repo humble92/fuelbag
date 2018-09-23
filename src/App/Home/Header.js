@@ -46,7 +46,7 @@ const Header = () => (
         paddingTop: '20%',
         paddingLeft: '5%',
         fontWeight: 'bold',
-        fontSize: 40,
+        fontSize: 48,
         color: 'white',
       }}>
         Let's break the cycle of poverty together!

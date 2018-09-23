@@ -9,8 +9,11 @@ import {
 } from '../../pages.js'
 
 const Item = styled.div`
-  padding-left: 10px;
+  padding-left: 20px;
   cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const Links = ({

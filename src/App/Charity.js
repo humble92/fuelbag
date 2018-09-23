@@ -53,22 +53,14 @@ export default () => (
               <li>shop assistant</li>
               <li>barber</li>
             </ul>
-            <div style={{
+            {/* <div style={{
               display: 'flex',
               justifyContent: 'flex-end',
             }}>
-              <div style={{
-                userSelect: 'none',
-                backgroundColor: '#35a2ca',
-                padding: 15,
-                color: 'white',
-                boxShadow: '0 2px 8px 0 rgba(0, 0, 0, 0.5)',
-                borderRadius: 10,
-                cursor: 'pointer',
-              }}>
+              <Button>
                 Volunteer
-              </div>
-            </div>
+              </Button>
+            </div> */}
           </div>
         </ListBox>
       )}

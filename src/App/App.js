@@ -14,6 +14,7 @@ const App = ({
     justifyContent: 'center',
     width: '100%',
     backgroundColor: '#f0f0f0',
+    color: '#3e4c5b',
   }}>
     <div style={{
       width: 880,

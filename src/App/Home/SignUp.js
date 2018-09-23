@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Button'
 
 export default () => (
   <div style={{
@@ -21,25 +22,15 @@ export default () => (
             fontSize: 20,
             height: 50,
             width: 400,
-            borderRadius: 5,
+            borderRadius: 10,
             padding: 15,
           }}
           value="Email"
         />
       </div>
-      <button style={{
-        fontSize: 20,
-        marginTop: 20,
-        width: 400,
-        height: 50,
-        borderRadius: 5,
-        backgroundColor: '#35a2ca',
-        color: 'white',
-        textTransform: 'uppercase',
-        border: 0,
-      }}>
+      <Button style={{marginTop: 10}}>
         Sign Up
-      </button>
+      </Button>
     </div>
   </div>
 )

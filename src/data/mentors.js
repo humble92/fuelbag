@@ -2,9 +2,10 @@ export default [
   {
     firstName: 'Martin',
     lastName: 'Haulena',
-    role: 'Venterinarian',
+    role: 'Head veterinarian',
     company: 'Vancouver Aquarium',
     linkedIn: 'https://www.linkedin.com/in/martin-haulena-a6b5b0150/',
+    logo: 'martin-haulena.jpg',
   },
   {
     firstName: 'Lance',
@@ -12,6 +13,7 @@ export default [
     role: 'Marine Mammals Scientist',
     company: 'Vancouver Aquarium',
     linkedIn: 'https://www.linkedin.com/in/lance-barrett-lennard-0527a918/',
+    logo: 'lance-barrett-lennard.jpg',
   },
   {
     firstName: 'Melanie',
@@ -19,6 +21,7 @@ export default [
     role: 'Minister of Advanced Education',
     company: 'BC New Democratic Party',
     linkedIn: 'https://www.linkedin.com/in/melanie-mark-95598b97/',
+    logo: 'melanie-mark.jpg',
   },
   {
     firstName: 'Alice',
@@ -26,6 +29,7 @@ export default [
     role: 'Software engineer',
     company: 'Amazon',
     linkedIn: 'https://www.linkedin.com/in/aliceyu01/',
+    logo: 'alice-yu.jpg',
   },
   {
     firstName: 'Paul',
@@ -33,6 +37,7 @@ export default [
     role: 'Aviation Technician Maintence Manager',
     company: 'Department of Defense Canada',
     linkedIn: 'https://www.linkedin.com/in/paul-hosegrove-9b407b9b/',
+    logo: 'paul-hosegrove.jpg',
   },
   {
     firstName: 'Jon',
@@ -40,6 +45,7 @@ export default [
     role: 'UX/UI Teaching Assistant',
     company: 'RED Academy',
     linkedIn: 'https://www.linkedin.com/in/jonbantados/',
+    logo: 'jon-bantados.jpg',
   },
   {
     firstName: 'Faisal',
@@ -47,6 +53,7 @@ export default [
     role: 'Senior Software Engineer',
     company: 'Dialpad',
     linkedIn: 'https://www.linkedin.com/in/rfaisal86/',
+    logo: 'faisal-rahman.jpg',
   },
   {
     firstName: 'Lais',
@@ -54,6 +61,7 @@ export default [
     role: 'UX Designer',
     company: 'Clio',
     linkedIn: 'https://www.linkedin.com/in/laiscelem/',
+    logo: 'lais-celem.jpg',
   },
   {
     firstName: 'Gordon',
@@ -61,6 +69,7 @@ export default [
     role: 'DevOps Developer',
     company: 'Safe software',
     linkedIn: 'https://www.linkedin.com/in/gordon-shieh-73658796/',
+    logo: 'gordon-shieh.jpg'
   },
   {
     firstName: 'Steven',
@@ -68,6 +77,7 @@ export default [
     role: 'iOS Developer',
     company: 'Aequilibrium Software',
     linkedIn: 'https://www.linkedin.com/in/stevethomp/',
+    logo: 'steven-thompson.jpg',
   },
   {
     firstName: 'Michael',
@@ -75,6 +85,7 @@ export default [
     role: 'Development Manager',
     company: 'Clio',
     linkedIn: 'https://www.linkedin.com/in/mncheung/',
+    logo: 'michael-cheung.jpg',
   },
   {
     firstName: 'Maz',
@@ -82,6 +93,7 @@ export default [
     role: 'Software Engineer',
     company: 'Enceladus Consulting Inc.',
     linkedIn: 'https://www.linkedin.com/in/maziarahmadi/',
+    logo: 'maz-ahmadi.jpg',
   },
   {
     firstName: 'Lara',
@@ -89,6 +101,15 @@ export default [
     role: 'Web Developer',
     company: 'Two Tall Totems',
     linkedIn: 'https://www.linkedin.com/in/lararode/',
+    logo: 'lara-rode.jpg',
+  },
+  {
+    firstName: 'Ed',
+    lastName: 'Levinson',
+    role: 'Angel Investor',
+    company: 'Ensibuuko',
+    linkedIn: 'https://www.linkedin.com/in/edlevinson/',
+    logo: 'ed-levinson.jpg',
   },
   {
     firstName: 'Timofey',
@@ -96,5 +117,6 @@ export default [
     role: 'Software Engineer',
     company: 'Ecoation',
     linkedIn: 'https://www.linkedin.com/in/timofey-smirnov/',
+    logo: 'timofey-smirnov.jpg',
   },
 ]

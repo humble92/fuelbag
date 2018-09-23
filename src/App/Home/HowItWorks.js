@@ -24,7 +24,6 @@ export default () => (
         <div style={{
           textTransform: 'uppercase',
           fontWeight: 'bold',
-          color: '#3e4c5b',
           paddingTop: 10,
         }}>
           1. Volunteer
@@ -35,7 +34,6 @@ export default () => (
         <div style={{
           textTransform: 'uppercase',
           fontWeight: 'bold',
-          color: '#3e4c5b',
           paddingTop: 10,
         }}>
           2. Earn fuel points
@@ -46,7 +44,6 @@ export default () => (
         <div style={{
           textTransform: 'uppercase',
           fontWeight: 'bold',
-          color: '#3e4c5b',
           paddingTop: 10,
         }}>
           3. Meet mentors

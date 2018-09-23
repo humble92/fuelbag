@@ -4,7 +4,9 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import reducer from './reducer'
 
 export default async () => {
-  const state = {}
+  const state = {
+    isSignedUp: localStorage.getItem('isSignedUp')
+  }
   const store = createStore(
     reducer,
     state,

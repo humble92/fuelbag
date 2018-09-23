@@ -24,22 +24,23 @@ const Header = () => (
         display: 'flex',
         alignItems: 'center',
       }}>
-        <Logo />
+        <div style={{
+          backgroundColor: 'white',
+          width: 50,
+          height: 50,
+          borderRadius: 25,
+        }}>
+          <Logo />
+        </div>
         <div style={{
           fontWeight: 'bold',
           paddingLeft: 10,
           textTransform: 'uppercase',
-        }}>fuelbag</div>
+        }}>
+          Fuelbag
+        </div>
       </div>
-      <div style={{
-        height: 50,
-        lineHeight: '50px',
-        fontSize: 12,
-        fontWeight: 'bold',
-        textTransform: 'uppercase',
-      }}>
-        <Links />
-      </div>
+      <Links />
     </div>
     <div style={{
       paddingTop: '20%',

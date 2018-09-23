@@ -24,13 +24,13 @@ const App = ({
         <Home />
       }
       {page === CHARITY &&
-        <div>
+        <div style={{width: '100%', backgroundColor: 'white'}}>
           <Header />
           <Charity />
         </div>
       }
       {page === MENTORS &&
-        <div>
+        <div style={{width: '100%', backgroundColor: 'white'}}>
           <Header />
           <Mentors />
         </div>

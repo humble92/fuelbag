@@ -22,6 +22,11 @@ const Links = ({
 }) => (
   <div style={{
     display: 'flex',
+    height: 50,
+    lineHeight: '50px',
+    fontSize: 12,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
   }}>
     <Item onClick={() => onSetPage(HOME)}>Home</Item>
     <Item onClick={() => onSetPage(CHARITY)}>Charity organizations</Item>

@@ -9,14 +9,11 @@ import {
 } from '../pages.js'
 import Logo from './Logo'
 
-const MenuItem = styled.div`
-  height: 50px;
-  line-height: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+const Item = styled.div`
+  padding-left: 20px;
   cursor: pointer;
   &:hover {
-    background-color: white;
+    text-decoration: underline;
   }
 `
 
@@ -24,25 +21,36 @@ const Header = ({
   onSetPage,
 }) => (
   <div style={{
-    backgroundColor: '#40E9F1',
     display: 'flex',
     alignItems: 'center',
-    width: '100%',
-    height: 50,
+    justifyContent: 'space-between',
+    padding: 20,
   }}>
     <div style={{
-      paddingLeft: 20,
+      display: 'flex',
+      alignItems: 'center',
     }}>
-      <Logo />
+      <div><Logo /></div>
+      <div style={{
+        fontWeight: 'bold',
+        paddingLeft: 10,
+        textTransform: 'uppercase',
+        color: '#35a2ca',
+      }}>
+        Fuelbag
+      </div>
     </div>
     <div style={{
       display: 'flex',
-      width: '100%',
-      justifyContent: 'center',
+      height: 50,
+      lineHeight: '50px',
+      fontSize: 12,
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
     }}>
-      <MenuItem onClick={() => onSetPage(HOME)}>Home</MenuItem>
-      <MenuItem onClick={() => onSetPage(CHARITY)}>Charity organizations</MenuItem>
-      <MenuItem onClick={() => onSetPage(MENTORS)}>Mentors</MenuItem>
+      <Item onClick={() => onSetPage(HOME)}>Home</Item>
+      <Item onClick={() => onSetPage(CHARITY)}>Charity organizations</Item>
+      <Item onClick={() => onSetPage(MENTORS)}>Mentors</Item>
     </div>
   </div>
 )

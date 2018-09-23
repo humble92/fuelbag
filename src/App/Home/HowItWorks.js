@@ -32,7 +32,7 @@ export default () => (
           textTransform: 'uppercase',
           fontWeight: 'bold',
           color: '#3e4c5b',
-          paddingTop: 5,
+          paddingTop: 10,
         }}>
           1. Volunteer
         </div>
@@ -50,7 +50,7 @@ export default () => (
           textTransform: 'uppercase',
           fontWeight: 'bold',
           color: '#3e4c5b',
-          paddingTop: 5,
+          paddingTop: 10,
         }}>
           2. Earn fuel points
         </div>
@@ -68,7 +68,7 @@ export default () => (
           textTransform: 'uppercase',
           fontWeight: 'bold',
           color: '#3e4c5b',
-          paddingTop: 5,
+          paddingTop: 10,
         }}>
           3. Meet mentors
         </div>

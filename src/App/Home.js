@@ -1,16 +1,56 @@
 import React from 'react'
+import styled from 'styled-components'
+import Logo from './Logo'
+import img from '../images/background.jpg'
+
+const Slogan = styled.div`
+  background-image: url(${img});
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+`
 
 export default () => (
   <div>
-    <div style={{
-      backgroundColor: '#FFC143',
-      height: 300,
-    }}>
-      <h1 style={{
-        paddingTop: 50,
-        paddingLeft: 50,
-      }}>Let's break the cycle of poverty together!</h1>
-    </div>
+    <Slogan>
+      <div style={{
+        color: 'white',
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: 20,
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+        }}>
+          <Logo />
+          <div style={{
+            fontWeight: 'bold',
+            paddingLeft: 10,
+            textTransform: 'uppercase',
+          }}>fuelbag</div>
+        </div>
+        <div style={{
+          height: 50,
+          lineHeight: '50px',
+          fontSize: 12,
+          fontWeight: 'bold',
+          textTransform: 'uppercase',
+        }}>
+          home | charity organizations | mentors
+        </div>
+      </div>
+      <div style={{
+        paddingTop: '20%',
+        paddingLeft: '5%',
+        fontWeight: 'bold',
+        fontSize: 40,
+        color: 'white',
+      }}>
+        Let's break the cycle of poverty together!
+      </div>
+    </Slogan>
     <div style={{
       backgroundColor: '#5381F3',
       height: 200,
@@ -32,6 +72,7 @@ export default () => (
     }}>
       <div style={{
         paddingTop: 40,
+        paddingBottom: 40,
       }}>
         <div>
           <input type="text" style={{

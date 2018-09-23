@@ -7,6 +7,7 @@ import {
   CHARITY,
   MENTORS,
 } from '../pages.js'
+import Logo from './Logo'
 
 const MenuItem = styled.div`
   height: 50px;
@@ -32,7 +33,7 @@ const Header = ({
     <div style={{
       paddingLeft: 20,
     }}>
-      Logo
+      <Logo />
     </div>
     <div style={{
       display: 'flex',

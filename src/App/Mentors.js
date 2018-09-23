@@ -11,13 +11,16 @@ export default () => (
       backgroundColor: 'white',
       margin: 20,
     }}>
-      {mentors.map(mentor =>
-        <div style={{
-          fontSize: 18,
-          border: '1px solid black',
-          padding: 10,
-          display: 'flex',
-        }}>
+      {mentors.map((mentor, index) =>
+        <div
+          key={index}
+          style={{
+            fontSize: 18,
+            border: '1px solid black',
+            padding: 10,
+            display: 'flex',
+          }}
+        >
           <div style={{
             minWidth: 100,
             minHeight: 100,

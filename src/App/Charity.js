@@ -11,13 +11,16 @@ export default () => (
       backgroundColor: 'white',
       margin: 20,
     }}>
-      {organizations.map(org =>
-        <div style={{
-          fontSize: 18,
-          border: '1px solid black',
-          padding: 10,
-          display: 'flex',
-        }}>
+      {organizations.map((org, index) =>
+        <div
+          key={index}
+            style={{
+            fontSize: 18,
+            border: '1px solid black',
+            padding: 10,
+            display: 'flex',
+          }}
+        >
           <div style={{
             minWidth: 100,
             minHeight: 100,

@@ -10,19 +10,32 @@ const App = ({
   page,
 }) => (
   <div style={{
-    backgroundColor: '#FF9A43',
-    minHeight: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    width: '100%',
   }}>
-    <Header />
-    {(!page || page === HOME) &&
-      <Home />
-    }
-    {page === CHARITY &&
-      <Charity />
-    }
-    {page === MENTORS &&
-      <Mentors />
-    }
+    <div style={{
+      backgroundColor: '#FF9A43',
+      maxWidth: 880,
+      minHeight: '100vh',
+      fontFamily: 'Montserrat',
+    }}>
+      {(!page || page === HOME) &&
+        <Home />
+      }
+      {page === CHARITY &&
+        <div>
+          <Header />
+          <Charity />
+        </div>
+      }
+      {page === MENTORS &&
+        <div>
+          <Header />
+          <Mentors />
+        </div>
+      }
+    </div>
   </div>
 )
 

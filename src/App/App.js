@@ -13,9 +13,9 @@ const App = ({
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
+    backgroundColor: '#f0f0f0',
   }}>
     <div style={{
-      backgroundColor: '#FF9A43',
       width: 880,
       minHeight: '100vh',
       fontFamily: 'Montserrat',

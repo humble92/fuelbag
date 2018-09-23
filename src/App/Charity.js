@@ -2,7 +2,7 @@ import React from 'react'
 import organizations from '../data/organizations'
 import ListBox from './ListBox'
 
-const IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/fuelbag-images'
+const IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/fuelbag-images/charity'
 
 export default () => (
   <div style={{

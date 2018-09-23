@@ -1,5 +1,6 @@
 import React from 'react'
 import organizations from '../data/organizations'
+import ListBox from './ListBox'
 
 export default () => (
   <div style={{
@@ -8,19 +9,18 @@ export default () => (
   }}>
     <div style={{
       width: 500,
-      backgroundColor: 'white',
       margin: 20,
     }}>
+      <div style={{
+        fontSize: 40,
+        fontWeight: 'bold',
+        color: '#35a2ca',
+        paddingBottom: 20,
+      }}>
+        Charity organizations
+      </div>
       {organizations.map((org, index) =>
-        <div
-          key={index}
-            style={{
-            fontSize: 18,
-            border: '1px solid black',
-            padding: 10,
-            display: 'flex',
-          }}
-        >
+        <ListBox key={index}>
           <div style={{
             minWidth: 100,
             minHeight: 100,
@@ -31,7 +31,7 @@ export default () => (
             <div><h3>{org.name}</h3></div>
             <div>{org.goal}</div>
           </div>
-        </div>
+        </ListBox>
       )}
     </div>
   </div>

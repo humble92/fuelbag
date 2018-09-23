@@ -12,6 +12,7 @@ import Logo from './Logo'
 const Item = styled.div`
   padding-left: 20px;
   cursor: pointer;
+  color: #35a2ca;
   &:hover {
     text-decoration: underline;
   }

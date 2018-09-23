@@ -1,5 +1,6 @@
 import React from 'react'
 import mentors from '../data/mentors'
+import ListBox from './ListBox'
 
 export default () => (
   <div style={{
@@ -12,15 +13,7 @@ export default () => (
       margin: 20,
     }}>
       {mentors.map((mentor, index) =>
-        <div
-          key={index}
-          style={{
-            fontSize: 18,
-            border: '1px solid black',
-            padding: 10,
-            display: 'flex',
-          }}
-        >
+        <ListBox key={index}>
           <div style={{
             minWidth: 100,
             minHeight: 100,
@@ -32,7 +25,7 @@ export default () => (
             <div>{mentor.role}</div>
             <div>{mentor.company}</div>
           </div>
-        </div>
+        </ListBox>
       )}
     </div>
   </div>

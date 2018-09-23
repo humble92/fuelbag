@@ -2,6 +2,7 @@ import React from 'react'
 import Volunteer from './Volunteer'
 import Mentor from './Mentor'
 import Fuel from './Fuel'
+import HeaderText from './HeaderText'
 
 export default () => (
   <div style={{
@@ -9,17 +10,9 @@ export default () => (
     paddingTop: 40,
     paddingBottom: 80,
   }}>
-    <div style={{
-      textTransform: 'uppercase',
-      color: '#35a2ca',
-      fontWeight: 'bold',
-      fontSize: 26,
-      width: '100%',
-      textAlign: 'center',
-    }}
-    >
+    <HeaderText>
       How it works
-    </div>
+    </HeaderText>
     <div style={{
       fontSize: 20,
       paddingTop: 40,

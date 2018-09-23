@@ -8,7 +8,7 @@ export default () => (
   <div>
     <Header />
     <HowItWorks />
-    <WhatTheySay />
+    {/* <WhatTheySay /> */}
     <SignUp />
   </div>
 )

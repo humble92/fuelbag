@@ -50,8 +50,9 @@ export default () => (
               paddingLeft: 20,
               paddingTop: 10,
             }}>
-              <li>shop assistant</li>
-              <li>barber</li>
+              {org.positions.map((position, index) =>
+                <li key={index}>{position}</li>
+              )}
             </ul>
             {/* <div style={{
               display: 'flex',

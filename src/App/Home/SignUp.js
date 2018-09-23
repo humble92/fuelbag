@@ -1,36 +1,79 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Button from '../Button'
+import Input from './Input'
+import HeaderText from './HeaderText'
+import isValidEmail from './isValidEmail'
+import { signup } from '../../redux/isSignedUp/signup'
 
-export default () => (
-  <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-  }}>
-    <div style={{
-      paddingTop: 40,
-      paddingBottom: 40,
-    }}>
-      <div>
-        <input
-          type="text"
-          style={{
-            outline: 'none',
-            backgroundColor: '#f7f7f7',
-            color: '#61788e',
-            border: 'solid 1px #BFD4E8',
-            fontSize: 20,
-            height: 50,
+class SignUp extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+    this.handleChange = this.handleChange.bind(this)
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleChange(e) {
+    this.setState({ email: e.target.value })
+  }
+
+  handleClick() {
+    if (isValidEmail(this.state.email)) {
+      this.props.onSignup()
+    }
+  }
+
+  render() {
+    const isEnabled = isValidEmail(this.state.email)
+    return (
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        backgroundColor: 'white',
+      }}>
+        {!this.props.isSignedUp &&
+          <div style={{
+            paddingBottom: 40,
             width: 400,
-            borderRadius: 10,
-            padding: 15,
-          }}
-          value="Email"
-        />
+          }}>
+            <HeaderText>Sign up <br/> and make a difference</HeaderText>
+            <div>
+              <Input
+                style={{
+                  marginTop: 20,
+                }}
+                placeholder="Email"
+                onChange={this.handleChange}
+              />
+            </div>
+            <Button
+              style={{marginTop: 20}}
+              isDisabled={!isEnabled}
+              onClick={this.handleClick}
+            >
+              Sign Up
+            </Button>
+          </div>
+        }
+        {this.props.isSignedUp &&
+          <div style={{
+            paddingBottom: 40,
+            width: 500,
+          }}>
+            <HeaderText>
+              Thank you for signing up! <br/>
+              We will contact you shortly.
+            </HeaderText>
+          </div>
+        }
       </div>
-      <Button style={{marginTop: 10}}>
-        Sign Up
-      </Button>
-    </div>
-  </div>
-)
+    )
+  }
+}
+
+export default connect(state => ({
+  isSignedUp: state.isSignedUp,
+}), {
+  onSignup: signup,
+})(SignUp)

@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Header from './Header'
-import Home from './Home'
+import Home from './Home/Home'
 import { CHARITY, MENTORS, HOME } from '../pages'
 import Charity from './Charity'
 import Mentors from './Mentors'
@@ -16,7 +16,7 @@ const App = ({
   }}>
     <div style={{
       backgroundColor: '#FF9A43',
-      maxWidth: 880,
+      width: 880,
       minHeight: '100vh',
       fontFamily: 'Montserrat',
     }}>

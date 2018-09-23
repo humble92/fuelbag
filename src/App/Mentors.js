@@ -9,9 +9,16 @@ export default () => (
   }}>
     <div style={{
       width: 500,
-      backgroundColor: 'white',
       margin: 20,
     }}>
+      <div style={{
+        fontSize: 40,
+        fontWeight: 'bold',
+        color: '#35a2ca',
+        paddingBottom: 20,
+      }}>
+        Mentors
+      </div>
       {mentors.map((mentor, index) =>
         <ListBox key={index}>
           <div style={{

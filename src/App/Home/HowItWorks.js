@@ -26,7 +26,7 @@ export default () => (
       display: 'flex',
       justifyContent: 'space-around',
     }}>
-      <div style={{width: 200}}>
+      <div style={{width: 230}}>
         <Volunteer />
         <div style={{
           textTransform: 'uppercase',
@@ -36,15 +36,8 @@ export default () => (
         }}>
           1. Volunteer
         </div>
-        <div style={{
-          fontSize: 14,
-          color: '#737c84',
-          paddingTop: 5,
-        }}>
-          Volunteer to charity organizations
-        </div>
       </div>
-      <div style={{width: 200}}>
+      <div style={{width: 230}}>
         <Fuel />
         <div style={{
           textTransform: 'uppercase',
@@ -54,15 +47,8 @@ export default () => (
         }}>
           2. Earn fuel points
         </div>
-        <div style={{
-          fontSize: 14,
-          color: '#737c84',
-          paddingTop: 5,
-        }}>
-          Once you complete your volunteer work you will earn points in your profile.
-        </div>
       </div>
-      <div style={{width: 200}}>
+      <div style={{width: 230}}>
         <Mentor />
         <div style={{
           textTransform: 'uppercase',
@@ -71,13 +57,6 @@ export default () => (
           paddingTop: 10,
         }}>
           3. Meet mentors
-        </div>
-        <div style={{
-          fontSize: 14,
-          color: '#737c84',
-          paddingTop: 5,
-        }}>
-          Meet mentors who will guide you through your future career
         </div>
       </div>
     </div>
